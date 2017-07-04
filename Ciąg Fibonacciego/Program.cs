@@ -13,7 +13,6 @@ namespace Ciąg_Fibonacciego
             Console.WriteLine("podaj którą liczbę w kolejności chcesz uzyskać :");
             int n = int.Parse(Console.ReadLine());
 
-
             if (n == 0)
             {
                 Console.WriteLine(" 0");
@@ -34,15 +33,9 @@ namespace Ciąg_Fibonacciego
                     a = b;
                     b = c;
                 }
-                 Console.WriteLine("wynik dla " + n + "-tego wyrazu to " + b);
-               
-               
-
+                 Console.WriteLine("wynik dla " + n + "-tego wyrazu to " + b);         
             }
             Console.ReadKey();
-
-
-
         }
     }
 }
