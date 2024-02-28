@@ -7,7 +7,7 @@ applications:
 
     # The runtime the application uses.
     # Complete list of available runtimes: https://docs.upsun.com/create-apps/app-reference.html#types
-    type: "nodejs:20"
+    type: "dotnet:6.0"
 
     # Choose which container profile (ratio CPU+RAM) your app will use. Default value comes from the image itself.
     # More information: https://docs.upsun.com/manage-resources/adjust-resources.html#adjust-a-container-profile
@@ -70,7 +70,7 @@ applications:
     # variables:
     #   env:
     #     # Add environment variables here that are static.
-    #     NODE_ENV: development
+    #     ENV_VARIABLE_NAME: "value"
 
     # Outbound firewall rules for the application. More information: https://docs.upsun.com/create-apps/app-reference.html#firewall
     # firewall:
@@ -85,8 +85,8 @@ applications:
     # the build hook runs using a package manager for the language.
     # More information: https://docs.upsun.com/create-apps/app-reference.html#dependencies
     # dependencies:
-    #   nodejs: # Specify one NPM package per line.
-    #     pm2: '^4.5.0'
+    #   runtime: # Specify one package per line.
+    #     package: 'version'
 
     # Hooks allow you to customize your code/environment as the project moves through the build and deploy stages
     # More information: https://docs.upsun.com/create-apps/app-reference.html#hooks
