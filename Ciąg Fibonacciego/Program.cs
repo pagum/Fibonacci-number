@@ -10,7 +10,7 @@ namespace Ciąg_Fibonacciego
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("podaajjj którą liczbę w kolejności chcesz uzyskać :");
+            Console.WriteLine("podaajjjj którą liczbę w kolejności chcesz uzyskać :");
             int n = int.Parse(Console.ReadLine());
 
             if (n == 0)
