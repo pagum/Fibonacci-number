@@ -9,9 +9,9 @@ applications:
     # Complete list of available runtimes: https://docs.upsun.com/create-apps/app-reference.html#types
     type: "dotnet:6.0"
 
-    # Choose which container profile (ratio CPU+RAM) your app will use. Default value comes from the image itself.
-    # More information: https://docs.upsun.com/manage-resources/adjust-resources.html#adjust-a-container-profile
-    # container_profile:
+    # How many resources to devote to the app. Defaults to AUTO in production environments.
+    # More information: https://docs.upsun.com/create-apps/app-reference.html#sizes
+    # size:
 
     # The relationships of the application with services or other applications.
     # The left-hand side is the name of the relationship as it will be exposed
@@ -123,7 +123,7 @@ applications:
 # The services of the project.
 #
 # Each service listed will be deployed
-# to power your Upsun project.
+# to power your Upsun (Staging) project.
 # More information: https://docs.upsun.com/add-services.html
 # Full list of available services: https://docs.upsun.com/add-services.html#available-services
 # services:
@@ -134,7 +134,7 @@ applications:
 # The routes of the project.
 #
 # Each route describes how an incoming URL is going
-# to be processed by Upsun.
+# to be processed by Upsun (Staging).
 # More information: https://docs.upsun.com/define-routes.html
 routes:
   "https://{default}/":
